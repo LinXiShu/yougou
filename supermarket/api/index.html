@@ -18,7 +18,6 @@
 		<input id="password" type="password" />
 		<button id="submit">登录</button>
 
-
 		<input id="un" type="text" />
 		<input id="pa" type="password" />
 		<button id="btn">注册</button>
@@ -37,6 +36,7 @@
 					success(data) {
 						
 					}
+
 				});
 			});
 
@@ -46,8 +46,10 @@
 					url: "http://localhost:1898/signin",
 					async: true,
 					data: {
-						username: $("#un").val(),
-						password: $("#pa").val()
+										
+						username : $("#un").val(),
+						password : $("#pa").val(),
+
 					},
 					success(data) {
 						
@@ -60,11 +62,11 @@
 			    $.ajax({
 
 			        type  : "post",
-			        url   : "http://localhost:1898/signin",
+			        url   : "http://localhost:1898/login",
 			        async : true,
 			        data: {
-			            username: $("#username").val(),
-			            password: $("#password").val()
+			            phone    : '15625591380',
+			            password : $("#password").val()
 			        },
 			        success(data) {
 			            console.log(data);

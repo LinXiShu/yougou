@@ -1,0 +1,35 @@
+/* 
+* @Author: Marte
+* @Date:   2018-06-13 11:04:39
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-06-13 14:22:53
+*/
+
+
+body{
+
+    background: skyblue;
+
+}
+
+
+        .box{
+
+            width : 450px;
+            height: 300px;
+            background: #fff;
+            position : absolute;
+            top : 0; left: 0; right:0; bottom: 0;
+            margin: auto auto ;
+            border-radius : 4% 4% 4% 4%;
+            
+        }
+.box .inp{
+    
+    width: 250px;height:30px;
+}
+.box .btn{
+
+    width: 100px;height: 40px; 
+    font-size: 16px;
+}
