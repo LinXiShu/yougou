@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>register</title>
+	<script src="../../require.js" data-main="../js/yougou-register.js" async></script>
+
+</head>
+<body>
+	<div class="yougou_register">
+		<div class="register_head">
+			<a href="javascript:history.go(-1);" class="lftarea">
+				<img src="../img/new-back.png" >
+			</a>
+			<div class="title">登录</div>
+		</div>
+		<div class="TypeWrap">
+			<div class="registerType active">手机号快捷登录</div>
+			<div class="loginType">账号名密码登录</div>
+		</div>
+		<div class="registerType_content">
+			<div class="pic_warp jusernamePhone">
+				<input type="text" class="inptxt usernamePhone reg_usernamePhone" placeholder="手机号">
+				<span class="btn_org">获取验证码</span>
+			</div>
+			<div class="pic_warp">
+				<input type="number" class="inptxt reg_password" placeholder="请输入验证码">
+			</div>
+			<div >
+				<input type="button" class="btn_register" value="登录">
+			</div>
+			<div class="phoneLoginTip phoneLoginShow">新会员限时惊喜 首次登录送百元礼包</div>
+		</div>
+		<div class="loginType_content">
+			<div class="pic_warp jusername">
+				<input type="text" class="inptxt usernamePhone login_usernamePhone" placeholder="手机号/邮箱">
+			</div>
+			<div class="pic_warp">
+				<input type="password" class="inptxt login_password" placeholder="密码">
+			</div>
+			<div >
+				<input type="button" class="btn_login" value="登录">
+			</div>
+			<div class="phoneLoginTip phoneLoginShow">忘记密码</div>
+		</div>
+		<div class="foot">
+			<img src="../img/foot.png">
+		</div>
+	</div>
+</body>
+</html>

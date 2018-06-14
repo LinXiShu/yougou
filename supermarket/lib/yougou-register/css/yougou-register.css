@@ -1,0 +1,180 @@
+/*重置样式表*/
+/*==========样式重置===========*/
+body,h1,h2,h3,h4,p,a,input,img,ul,li,ol,dl,dt,dd{
+	padding:0;
+	margin:0;}
+ul,ol{
+	list-style:none;}
+img{
+	display:block;
+	border:0;}
+input{
+    /*去掉高亮*/
+	outline:none;}
+header,footer,section,main,nav{
+	display:block;}
+body{
+	font-size:0.375rem;
+	font-family:"微软雅黑";
+	color:#3e3e3e;}
+a{
+	text-decoration:none;
+	color:#0dc441;}
+a:hover{
+	text-decoration:underline;}
+i{font-style:normal;}
+/* *{box-sizing:border-box;} */
+/* --------------------------------↓开始写样式啦↓----------------------- */
+.register_head{
+	overflow: hidden;
+	border-bottom:0.03125rem solid #DDD;
+	background-color:#f8f8f8;
+	font-size: 0.5625rem;
+	text-align: center;
+}
+.register_head .lftarea{
+	display: block;
+	float: left;
+	width: 1.125rem;
+	line-height: 1.375rem;
+
+}
+.register_head .lftarea img{
+	display: inline;
+	width: 0.375rem;
+	vertical-align: middle;
+}
+.register_head .title{
+	float: left;
+	width:78%;
+	margin: 0 auto;
+	height: 1.375rem;
+	line-height: 1.375rem;
+}
+
+/* -----------------------↓↓注册表样式↓↓-------------------- */
+.TypeWrap{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 0.6875rem;
+	text-align: center;
+	border-bottom: 0.03125rem solid #DDD;
+	margin-left: 0.4375rem;
+	margin-right: 0.4375rem;
+	font-size: 0.4375rem;
+}
+.TypeWrap .registerType{
+	flex: 50%;
+    line-height: 1.09375rem;
+    height: 1.09375rem;
+}
+.active{
+	color: #ff4664;
+	margin-bottom: -0.03125rem;
+	border-bottom: 0.046875rem solid #ff4664;
+}
+.TypeWrap .loginType{
+	flex: 50%;
+    line-height: 1.09375rem;
+    height: 1.09375rem;
+	/* color: #ff4664;
+	margin-bottom: -0.015625rem;
+	border-bottom: 0.046875rem solid #ff4664; */
+}
+.registerType_content{
+	margin-left: 0.4375rem;
+	margin-right: 0.4375rem;
+}
+.registerType_content .pic_warp{
+	height: 1.40625rem;
+	border-bottom: 0.03125rem solid #DDD;
+}
+.registerType_content .pic_warp .inptxt{
+	border: none;
+	width: 100%;
+	height: 1.375rem;
+	padding-left: 0.15625rem;
+	font-size: 0.4375rem;
+}
+.registerType_content .pic_warp .usernamePhone{
+	width: 5.825rem;
+}
+.registerType_content .pic_warp .btn_org{
+	display: inline-block;
+	width: 2.875rem;
+	height: 0.9375rem;
+	line-height: 0.9375rem;
+	border-left: 0.03125rem solid #DDD;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.40625rem;
+}
+.registerType_content .btn_register{
+	display: block;
+    width: 100%;
+    margin-top: 1.25rem;
+    background: #999;
+    color: #fff;
+    height: 1.375rem;
+    line-height: 1.375rem;
+    font-size: 0.5rem;
+    border: none;
+}
+.registerType_content .phoneLoginTip{
+    font-size: 0.375rem;
+    text-align: center;
+    color: #ff4664;
+    padding-top: 0.15625rem;
+    font-size: 0.375rem;
+}
+.foot img{
+	width: 10.0rem;
+}
+/* -----------------------↓↓登录表样式↓↓-------------------- */
+.loginType_content{
+	display: none;
+	margin-left: 0.4375rem;
+	margin-right: 0.4375rem;
+}
+.loginType_content .pic_warp{
+	height: 1.40625rem;
+	border-bottom: 0.03125rem solid #DDD;
+}
+.loginType_content .pic_warp .inptxt{
+	border: none;
+	width: 100%;
+	height: 1.375rem;
+	padding-left: 0.15625rem;
+	font-size: 0.4375rem;
+}
+.loginType_content .pic_warp .usernamePhone{
+	width: 5.825rem;
+}
+/* .loginType_content .pic_warp .btn_org{
+	display: inline-block;
+	width: 2.875rem;
+	height: 0.9375rem;
+	line-height: 0.9375rem;
+	border-left: 0.03125rem solid #DDD;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.40625rem;
+} */
+.loginType_content .btn_login{
+	display: block;
+    width: 100%;
+    margin-top: 1.25rem;
+    background: #999;
+    color: #fff;
+    height: 1.375rem;
+    line-height: 1.375rem;
+    font-size: 0.5rem;
+    border: none;
+}
+.loginType_content .phoneLoginTip{
+    font-size: 0.375rem;
+    text-align: right;
+    color: #666;
+    padding-top: 0.15625rem;
+    font-size: 0.375rem;
+}
