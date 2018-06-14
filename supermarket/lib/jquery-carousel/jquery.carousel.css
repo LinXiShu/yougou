@@ -1,0 +1,8 @@
+.carousel{position:relative;width:810px;height:320px;overflow:hidden;}
+.carousel img{display: block;}
+.carousel ul{position:absolute;overflow:hidden;list-style: none;padding:0;margin:0;}
+.carousel ul.horizontal li{float:left;}
+.carousel ul.fade li{position:absolute;left:0;top:0;}
+.carousel .page{position:absolute;right:0;bottom:0;padding:10px;}
+.carousel .page span{display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);}
+.carousel .page span.active{background-color: rgba(255,0,0,.8)}

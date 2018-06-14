@@ -1,0 +1,140 @@
+body, html {
+  height: 100%; }
+
+#details {
+  height: 100%;
+  flex-direction: column;
+  overflow-x: hidden; }
+  #details #header {
+    height: 88px;
+    padding: 16px 0;
+    display: flex;
+    background: #f8f8f8;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc; }
+    #details #header .icon1 {
+      display: block;
+      height: 56px;
+      text-align: center;
+      line-height: 56px;
+      width: 90px; }
+      #details #header .icon1 i {
+        font-size: 70px;
+        font-weight: bold;
+        color: #000; }
+    #details #header .spxq {
+      width: 524px;
+      margin-right: 40px;
+      margin-left: 25px;
+      height: 53px;
+      line-height: 53px;
+      font-size: 32px;
+      text-align: center; }
+    #details #header .icon2 {
+      height: 56px;
+      line-height: 56px;
+      width: 84px;
+      text-align: center; }
+      #details #header .icon2 i {
+        font-size: 40px;
+        font-weight: 600; }
+  #details #main1 {
+    overflow: hidden;
+    padding-left: 20px; }
+    #details #main1 .tu {
+      height: 470px;
+      width: 100%;
+      padding-left: 125px; }
+      #details #main1 .tu img {
+        display: block;
+        height: 470px;
+        width: 470px; }
+    #details #main1 .name {
+      width: 88%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 28px;
+      color: #666;
+      padding-right: 6px;
+      min-height: 36px; }
+    #details #main1 .price {
+      font-size: 45px;
+      font-family: arial;
+      font-weight: bold;
+      color: #ff0000;
+      padding-top: 20px; }
+      #details #main1 .price .youhui {
+        float: right;
+        font-size: 25px;
+        font-weight: 500;
+        color: #000;
+        padding-right: 30px;
+        padding-top: 30px; }
+  #details #main3 {
+    border-top: 12px solid #eee;
+    border-bottom: 12px solid #eee;
+    height: 100px;
+    padding: 4px 24px 4px 24px; }
+    #details #main3 .xuanze {
+      display: inline-block;
+      height: 60px;
+      color: #666;
+      font-size: 28px;
+      width: 80px; }
+    #details #main3 .hscm {
+      display: inline-block;
+      height: 60px;
+      line-height: 60px;
+      /*   color:#666; */
+      font-size: 28px;
+      width: 135px; }
+    #details #main3 a {
+      float: right;
+      display: inline-block;
+      height: 68px;
+      width: 60px;
+      text-align: center;
+      line-height: 68px; }
+      #details #main3 a i {
+        font-size: 45px;
+        font-weight: 700;
+        color: #666; }
+  #details #footer {
+    height: 88px;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    margin: auto 0 0 0;
+    width: 100%;
+    z-index: 101;
+    padding: 0; }
+    #details #footer .sc {
+      width: 15%;
+      height: 88px;
+      font-size: 28px;
+      color: #666;
+      text-align: center; }
+      #details #footer .sc i {
+        font-size: 50px;
+        padding-left: 5px; }
+    #details #footer .gwc {
+      width: 15%;
+      height: 88px;
+      font-size: 28px;
+      color: #666;
+      text-align: center; }
+      #details #footer .gwc i {
+        font-size: 50px;
+        padding-left: 5px; }
+    #details #footer .pp {
+      width: 35%;
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      height: 88px;
+      line-height: 88px;
+      color: #fff; }
+    #details #footer .jiaru {
+      background: #ffbc00; }
+    #details #footer .goumai {
+      background: #ff3300; }

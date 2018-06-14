@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" id="vp"/>
+        <script>
+            // 把尺寸放大N倍（N是window.devicePixelRatio）
+            var wd = document.documentElement.clientWidth*window.devicePixelRatio/10;
+            //物理像素*设备像素比=真实像素
+            document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+            var scale = 1/window.devicePixelRatio;
+            var mstr = 'initial-scale='+ scale +', maximum-scale='+ scale +', minimum-scale='+ scale +', user-scalable=no';
+            document.getElementById("vp").content = mstr;
+        </script>
+        <link rel="stylesheet" type="text/css" href="../css/details.css">
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <link rel="stylesheet" type="text/css" href="../font/font_unbfkves5q/iconfont.css">
+        <script type="text/javascript" src="../js/require.js" data-main="../js/details.js"></script>
+    </head>
+    <body>
+        <div id="details">
+            <div id="header">
+                <a class="icon1" href="classify.html"> <i class="iconfont icon-back" ></i></a>
+                <p class="spxq">商品详情</p>
+                <a class="icon2"><i class="iconfont icon-category"></i></a>
+            </div> 
+
+            <div id="main1">
+            </div> 
+
+            <div id="main3">
+                <span class="xuanze">选择 :</span>
+                <span class="hscm">黑色/尺码</span>
+                <a href="#"><i class="iconfont icon-more"></i></a>
+            </div>
+                
+           
+           
+  
+           
+            <div id="main">
+                <ul class="clearfix mainlist">
+       
+                </ul>
+    
+            </div>
+            <div id="footer">
+                
+               
+                <span class="sc"><i class="iconfont icon-iconfontxingxing"></i><br />收藏</span>
+                <a href="#" class="gwc"><i class="iconfont icon-cart"></i><br />购物车</a>
+                <span class="jiaru pp">加入购物车</span>
+                <span class="goumai pp">立刻购买</span>
+
+             
+            </div>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+body, html {
+  height: 100%; }
+
+#list {
+  height: 100%;
+  flex-direction: column;
+  overflow-x: hidden; }
+  #list #header {
+    height: 88px;
+    padding: 16px 0;
+    display: flex;
+    background: #f8f8f8;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc; }
+    #list #header .icon1 {
+      display: block;
+      height: 56px;
+      text-align: center;
+      line-height: 56px;
+      width: 90px; }
+      #list #header .icon1 i {
+        font-size: 70px;
+        font-weight: bold;
+        color: #000; }
+    #list #header form {
+      width: 524px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: #fff;
+      margin-right: 40px;
+      margin-left: 25px; }
+      #list #header form input {
+        border: none;
+        font-size: 28px;
+        height: 53px;
+        line-height: 53px;
+        padding-left: 10px;
+        width: 470px; }
+      #list #header form i {
+        font-size: 30px;
+        color: #ccc; }
+    #list #header .icon2 {
+      height: 56px;
+      line-height: 56px;
+      width: 84px;
+      text-align: center; }
+      #list #header .icon2 i {
+        font-size: 40px;
+        font-weight: 600; }
+  #list #nav {
+    width: 100%; }
+    #list #nav ul {
+      width: 100%;
+      border-bottom: 1px solid #ccc; }
+      #list #nav ul li {
+        width: 20%;
+        float: left;
+        color: #999;
+        text-align: center;
+        height: 84px;
+        line-height: 84px; }
+      #list #nav ul .nav3 {
+        position: relative; }
+        #list #nav ul .nav3 i {
+          position: absolute;
+          font-size: 30px; }
+        #list #nav ul .nav3 .mtop {
+          top: 38px;
+          right: 5px;
+          height: 30px;
+          line-height: 30px;
+          width: 40px; }
+        #list #nav ul .nav3 .mbuttom {
+          top: 22px;
+          right: 5px;
+          height: 30px;
+          width: 40px;
+          line-height: 30px; }
+  #list #main {
+    overflow: hidden;
+    position: relative;
+    /*  background:#f8f8f8; */ }
+    #list #main .mainlist {
+      padding: 24px 0 24px 24px; }
+      #list #main .mainlist li {
+        float: left;
+        padding: 0 24px 24px 0;
+        width: 50%; }
+        #list #main .mainlist li section {
+          border: 1px solid #d7d7d7;
+          position: relative; }
+          #list #main .mainlist li section a {
+            display: block; }
+            #list #main .mainlist li section a img {
+              margin-bottom: 2px;
+              width: 100%;
+              padding: 3px; }
+          #list #main .mainlist li section .name {
+            display: block;
+            text-align: left;
+            padding: 0 10px;
+            height: 64px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 23px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2; }
+          #list #main .mainlist li section .price {
+            color: red;
+            font-weight: 700;
+            font-size: 28px;
+            padding: 15px 0 10px; }
+          #list #main .mainlist li section .xianshi {
+            position: absolute;
+            top: 10px;
+            right: 0px;
+            height: 40px;
+            width: 100px;
+            line-height: 40px;
+            background: #ff4c4c;
+            text-align: center;
+            color: #fff; }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" id="vp"/>
+        <script>
+            // 把尺寸放大N倍（N是window.devicePixelRatio）
+            var wd = document.documentElement.clientWidth*window.devicePixelRatio/10;
+            //物理像素*设备像素比=真实像素
+            document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+            var scale = 1/window.devicePixelRatio;
+            var mstr = 'initial-scale='+ scale +', maximum-scale='+ scale +', minimum-scale='+ scale +', user-scalable=no';
+            document.getElementById("vp").content = mstr;
+        </script>
+        <link rel="stylesheet" type="text/css" href="../css/list.css">
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <link rel="stylesheet" type="text/css" href="../font/font_unbfkves5q/iconfont.css">
+        <script type="text/javascript" src="../js/require.js" data-main="../js/list.js"></script>
+    </head>
+    <body>
+        <div id="list">
+            <div id="header">
+                <a class="icon1" href="classify.html"> <i class="iconfont icon-back" ></i></a>
+                <form><input type="text" placeholder="请输入关键字"/><i class="iconfont icon-search"></i></form>
+              
+               
+                <a class="icon2"><i class="iconfont icon-category"></i></a>
+            </div>
+
+            <div id="nav">
+                <ul class="clearfix">
+                    <li>综合</li>
+                    <li>销量</li>
+                    <li class="nav3">价格
+                        <i class="iconfont icon-moreunfold mtop"></i >
+                        <i class="iconfont icon-less mbuttom"></i>
+                    </li>
+                    <li>新品</li>
+                    <li>筛选</li>
+                    
+                </ul>
+                
+            </div>
+              
+            
+           
+            <div id="main">
+                <ul class="clearfix mainlist">
+       
+                </ul>
+    
+            </div>
+            
+        </div>
+    </body>
+</html>
