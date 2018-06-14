@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" id="vp"/>
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+            var wd = document.documentElement.clientWidth*window.devicePixelRatio/10;
+            document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+            var scale = 1/window.devicePixelRatio;
+            var mstr = 'initial-scale='+ scale +', maximum-scale='+ scale +', minimum-scale='+ scale +', user-scalable=no';
+            document.getElementById("vp").content = mstr;
+        </script>
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="font/font_unbfkves5q/iconfont.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="lib/swiper-lunbo/dist/idangerous.swiper.css" />
+    </head>
+    <body>
+        <div id="box">
+            <header>
+                <ul>
+                    <li class="hd1">
+                        <!-- logo -->
+                        <span class="lg1">优购</span>
+                        <span class="lg2">yougou.com</span>
+                    </li>
+                    <li class="hd2">
+                        <input type="text" placeholder="运动爆款秒杀 85元起"/>
+                        <i class="iconfont icon-search"></i>
+                    </li>
+                    <li class="hd3">
+                        <a href="#">
+                            <i class="iconfont icon-comments"></i>
+                            <span>消息</span>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+            <main>
+                <div class="banner">
+                    <div class="device">
+                    
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"> <img src="img/s_banner1.jpg"> </div>
+                                <div class="swiper-slide"> <img src="img/s_banner2.jpg"> </div>
+                                <div class="swiper-slide"> <img src="img/s_banner3.jpg"> </div>
+                                <div class="swiper-slide"> <img src="img/s_banner4.jpg"> </div>
+                            </div>
+                        </div>
+                        <div class="pagination"></div>
+                    </div>
+                    <script src="lib/swiper-lunbo/js/jquery-1.10.1.min.js"></script>
+                    <script src="lib/swiper-lunbo/dist/idangerous.swiper.min.js"></script>
+                    <script>
+                        var mySwiper = new Swiper('.swiper-container',{
+                        pagination: '.pagination',
+                        loop:true,
+                        grabCursor: true,
+                        paginationClickable: true
+                        })
+                        $('.arrow-left').on('click', function(e){
+                        e.preventDefault()
+                        mySwiper.swipePrev()
+                        })
+                        $('.arrow-right').on('click', function(e){
+                        e.preventDefault()
+                        mySwiper.swipeNext()
+                        })
+                    </script>
+                </div>
+                <div class="brand1">
+                    <ul>
+                        <li><a href="#"><img src="img/main1.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="img/main2.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="img/main3.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="img/main4.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="img/main5.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="img/main6.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="img/main7.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="img/main8.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="brand2 clearfix">
+                    <ul>
+                        <li><a href="#"><img src="img/main9.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="img/main10.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="img/main11.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="img/main12.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="brand3 clearfix">
+                    <ul>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528770484892.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528361746798.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528361751342.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528361756919.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528361796845.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528361803084.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528361829839.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528361835310.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="brand4 clearfix">
+                    <p>
+                        <span class="span1">
+                            <img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/05/1526954029691.jpg" alt="" />
+                        </span>
+                        <span class="span2">客服电话变更通知</span>
+                    </p>
+                    <ul>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1527832675348.gif" alt="" /></a></li>
+                        <li><a href="#"><img src="//i1.ygimg.cn/pics/mobile/homepage/2017/09/1506741110562.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="//i1.ygimg.cn/pics/mobile/homepage/2017/11/1511422143472.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="//i1.ygimg.cn/pics/mobile/homepage/2017/04/1491978584289.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="brand5 clearfix">
+                    <a href="#">
+                        <img src="//i1.ygimg.cn/pics/mobile/homepage/2017/05/1494580638884.jpg" alt="" />
+                    </a>
+                    <ul>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262398018.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262403119.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262407631.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262412383.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262436825.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262442119.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262447831.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262452972.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="brand6 clearfix">
+                    <a href="#">
+                        <img src="//i1.ygimg.cn/pics/mobile/homepage/2017/05/1494580926544.jpg" alt="" />
+                    </a>
+                    <ul>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262590871.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262595652.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262600949.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262610234.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="brand7 clearfix">
+                    <a href="#">
+                        <img src="//i1.ygimg.cn/pics/mobile/homepage/2017/05/1494581057027.jpg" alt="" />
+                    </a>
+                    <ul class="ul1">
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528271255372.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262671111.jpg" alt="" /></a></li>
+                    </ul>
+                    <ul class="ul2">
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528271268416.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262703365.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262710142.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262714925.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="brand8 clearfix">
+                    <a href="#">
+                        <img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528262735079.jpg" alt="" />
+                    </a>
+                    <a href="#">
+                        <img src="//i1.ygimg.cn/pics/mobile/homepage/2017/05/1494581742280.jpg" alt="" />
+                    </a>
+                    <ul>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263006074.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263011624.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263018937.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263023889.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263040051.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263049304.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263064208.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263070152.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="brand9 clearfix">
+                    <a href="#">
+                        <img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263085410.jpg" alt="" />
+                    </a>
+                    <a href="#">
+                        <img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528790844194.jpg" alt="" />
+                    </a>
+                    <ul class="ul1">
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528271284784.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263147446.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263153005.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263157623.jpg" alt="" /></a></li>
+                    </ul>
+                    <ul class="ul2">
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528271753445.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263181365.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="brand10 clearfix">
+                    <a href="#">
+                        <img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263346679.jpg" alt="" />
+                    </a>
+                    <a href="#">
+                        <img src="//i1.ygimg.cn/pics/mobile/homepage/2017/05/1494582322593.jpg" alt="" />
+                    </a>
+                    <ul>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263579155.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263583949.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/06/1528263588756.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="brand11 clearfix">
+                    <ul>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/05/1525929404461.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/04/1523929364997.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/04/1524108997472.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/03/1521102303819.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/03/1521102404759.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/03/1521102411219.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/03/1521102425311.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/03/1521102431810.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/04/1524019719595.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/03/1521102560775.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/03/1521102574582.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/04/1524019730883.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/03/1521102640400.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/03/1521102645585.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/04/1524019749886.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="https://i1.ygimg.cn/pics/mobile/homepage/2018/03/1521102719655.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="loginbar">
+                    <ul>
+                        <li class="li1">
+                            <span><a href="">登录</a></span>
+                            <span><a href="">注册</a></span>
+                        </li>
+                        <li class="li2">
+                            <span><a href="">电脑版</a></span>
+                            <span><a href="">客户端</a></span>
+                            <span><a href="">微信</a></span>
+                        </li>
+                    </ul>
+                    <p>百丽国际旗下购物网站</p>
+                    <p>Copyright © 2011-2018 优购 m.yougou.com</p>
+                </div>
+            </main>
+            <footer>
+                <ul class="ft">
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-less"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-all"></i>
+                            <span>分类</span>
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-smile"></i>
+                            <span>U惠购</span>
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-cart"></i>
+                            <span>购物车</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-accountfilling"></i>
+                            <span>我的</span>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
